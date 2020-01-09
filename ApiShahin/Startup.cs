@@ -31,6 +31,13 @@ namespace ApiShahin
                 options.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // Add Cors
+            services.AddCors(o => o.AddPolicy("ApiPolicy", builder => {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

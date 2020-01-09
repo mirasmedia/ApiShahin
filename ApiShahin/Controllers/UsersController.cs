@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ApiShahin.Data;
 using ApiShahin.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace ApiShahin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("ApiPolicy")]
     public class UsersController : ControllerBase
     {
         private readonly ApiContext _context;
