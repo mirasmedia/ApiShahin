@@ -48,7 +48,7 @@ namespace ApiShahin
             app.UseHttpsRedirection();
             app.UseMvc();
 
-            DummyData.Initialize(app);
+            //DummyData.Initialize(app);
         }
     }
 }
