@@ -27,6 +27,7 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0"
@@ -39,6 +40,37 @@
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.2.0": {},
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.1",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "1.1.6.0",
+            "fileVersion": "1.1.6.40621"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {
+            "assemblyVersion": "1.1.6.0",
+            "fileVersion": "1.1.6.40621"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.0": {
         "runtime": {
           "lib/net461/dotnet-aspnet-codegenerator-design.exe": {
@@ -3185,6 +3217,20 @@
       "sha512": "sha512-VLWK+ZtMMNukY6XjxYHc7mz33vkquoEzQJHm/LCF5REVxIaexLr+UTImljRRJBdUDJluDAQwU+59IX0rFDfURA==",
       "path": "microsoft.aspnetcore.razor.design/2.2.0",
       "hashPath": "microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz7C0Ddnge16NRf4CU8GygYxOor3+oQ797//eXI+xbKlJr2ighAEkno9gOipDlym4SiFtKNNuOuBI/BDBGD7Kg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nxdW1YfZtn3nbcFqIAbjo6vCbCNOx0g82qMv+9fTUsNTsW0KSENYc2pbjF3yO8ZqYdBjmx2gMfAGk6wjy5cldg==",
+      "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.6",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.design.1.1.6.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.0": {
       "type": "package",
