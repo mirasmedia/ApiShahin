@@ -18,25 +18,53 @@ namespace ApiShahin.Data
                 context.Database.EnsureCreated();
                 //context.Database.Migrate();
 
-                // Look for any ailments
-                if (context.Users != null && context.Users.Any())
-                    return;   // DB has already been seeded
+                // Look if actors dumme data is set else genrate data
+                if (context.Actors != null && context.Actors.Any())
+                {
+                    return;
+                }
+                else
+                {
+                    var actors = GenerateActors().ToArray();
+                    context.Actors.AddRange(actors);
+                    context.SaveChanges();
+                }
+                    
 
-                var ailments = SetUsers().ToArray();
-                context.Users.AddRange(ailments);
-                context.SaveChanges();
+                // Look if movies dumme data is set else genrate data
+                if (context.Movies != null && context.Movies.Any())
+                {
+                    return;
+                }
+                else
+                {
+                    var movies = GenerateMovies(context).ToArray();
+                    context.Movies.AddRange(movies);
+                    context.SaveChanges();
+                }   
             }
         }
 
-        public static List<User> SetUsers()
+        public static List<Actor> GenerateActors()
         {
-            List<User> ailments = new List<User>() {
-                new User {Name="Arnold", LastName="Schwarzenegger", Address="", City="California", Phonenumber="+1326548723", Zipcode=""},
-                new User {Name="Rocky", LastName="Balboa ", Address="4th Street", City="LA", Phonenumber="645321657", Zipcode="LA54B4"},
-                new User {Name="Sylvester", LastName="Stallone", Address="", City="Lasvegas", Phonenumber="32655147", Zipcode=""},
-                new User {Name="Arnold", LastName="Schwarzenegger", Address="Washingtonstreet", City="Texas", Phonenumber="782117465", Zipcode="BN445"}
+            List<Actor> ailments = new List<Actor>() {
+                new Actor {Name="Arnold", LastName="Schwarzenegger", Address="", City="California", Phonenumber="+1326548723", Zipcode=""},
+                new Actor {Name="Scarlett", LastName="Johansson", Address="4th Street", City="LA", Phonenumber="645321657", Zipcode="LA54B4"},
+                new Actor {Name="Sylvester", LastName="Stallone", Address="", City="Lasvegas", Phonenumber="32655147", Zipcode=""},
+                new Actor {Name="Arnold", LastName="Schwarzenegger", Address="Washingtonstreet", City="Texas", Phonenumber="782117465", Zipcode="BN445"}
             };
             return ailments;
+        }
+
+        public static List<Movie> GenerateMovies(ApiContext db)
+        {
+            List<Movie> movies = new List<Movie>() {
+                new Movie {Name="Jojo Rabbit", Year="2019", Rating=4.2f, Actor = new List<Actor>(db.Actors.Take(2))},
+                new Movie {Name="Predator", Year="1987", Rating=4.1f, Actor = new List<Actor>(db.Actors.Take(1))},
+                new Movie {Name="The 6th Day", Year="2000", Rating=3.6f, Actor = new List<Actor>(db.Actors.Take(4))},
+                new Movie {Name="Rocky", Year="1976", Rating=4.6f, Actor = new List<Actor>(db.Actors.Take(3))},
+            };
+            return movies;
         }
     }
 }
