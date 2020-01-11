@@ -14,3 +14,4 @@ D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.AssemblyI
 D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.RazorTargetAssemblyInfo.cache
 D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.dll
 D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.pdb
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\libman.json

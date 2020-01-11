@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiShahin.Data.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    [Migration("20200109213629_Init")]
-    partial class Init
+    [Migration("20200111192555_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
