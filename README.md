@@ -5,19 +5,19 @@
 
 ### Actors
 
-GET: https://api-shahin.azurewebsites.net/api/users
+GET: https://api-shahin.azurewebsites.net/api/Actors
 
-GET: https://api-shahin.azurewebsites.net/api/Users/2
+GET: https://api-shahin.azurewebsites.net/api/Actors/2
 
-GET: https://api-shahin.azurewebsites.net/api/Users/name/arnold
+GET: https://api-shahin.azurewebsites.net/api/Actors/name/arnold
 
-GET: https://api-shahin.azurewebsites.net/api/Users/lastname/Schwarzenegger
+GET: https://api-shahin.azurewebsites.net/api/Actors/lastname/Schwarzenegger
 
-PUT: https://api-shahin.azurewebsites.net/api/Users/1
+PUT: https://api-shahin.azurewebsites.net/api/Actors/1
 
-POST: https://api-shahin.azurewebsites.net/api/users [Body Actor actor]
+POST: https://api-shahin.azurewebsites.net/api/Actors [Body Actor actor]
 
-DELETE: https://api-shahin.azurewebsites.net/api/Users/1
+DELETE: https://api-shahin.azurewebsites.net/api/Actors/1
 
 
 ### Movies
