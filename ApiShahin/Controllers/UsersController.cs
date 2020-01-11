@@ -49,6 +49,20 @@ namespace ApiShahin.Controllers
             return Ok(user);
         }
 
+        // GET: api/Users/ByName/Arnold
+        [HttpGet("name/{name}")]
+        public IEnumerable<User> GetByName(string name)
+        {
+            return _context.Users.Where(a => a.Name == name);
+        }
+
+        // GET: api/Users/ByName/Arnold
+        [HttpGet("lastname/{name}")]
+        public IEnumerable<User> GetByLastName(string name)
+        {
+            return _context.Users.Where(a => a.LastName == name);
+        }
+
         // PUT: api/Users/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser([FromRoute] int id, [FromBody] User user)
@@ -83,6 +97,8 @@ namespace ApiShahin.Controllers
 
             return NoContent();
         }
+
+
 
         // POST: api/Users
         [HttpPost]
