@@ -1,25 +1,36 @@
 # Shahin Serverside Programming
 ## Stud. nr. 575829
 
-### API URL
+## API URL
 
-Get all users
-https://api-shahin.azurewebsites.net/api/users
+### Actors
 
-Get user by id
-https://api-shahin.azurewebsites.net/api/Users/2
+GET: https://api-shahin.azurewebsites.net/api/users
 
-Get user by Name
-https://api-shahin.azurewebsites.net/api/Users/name/arnold
+GET: https://api-shahin.azurewebsites.net/api/Users/2
 
-Get user by LastName
-https://api-shahin.azurewebsites.net/api/Users/lastname/Schwarzenegger
+GET: https://api-shahin.azurewebsites.net/api/Users/name/arnold
 
-Put user by id
-https://api-shahin.azurewebsites.net/api/Users/1
+GET: https://api-shahin.azurewebsites.net/api/Users/lastname/Schwarzenegger
 
-Post a new user
-https://api-shahin.azurewebsites.net/api/users -> [Body USer user]
+PUT: https://api-shahin.azurewebsites.net/api/Users/1
 
-Delete user by id
-https://api-shahin.azurewebsites.net/api/Users/1
+POST: https://api-shahin.azurewebsites.net/api/users [Body USer user]
+
+DELETE: https://api-shahin.azurewebsites.net/api/Users/1
+
+
+### Movies
+GET: https://api-shahin.azurewebsites.net/api/Movies
+
+GET: https://api-shahin.azurewebsites.net/api/Movies/2
+
+GET: https://api-shahin.azurewebsites.net/api/Movies/rating/3.4
+
+GET: https://api-shahin.azurewebsites.net/api/Movies/year?year=2019
+
+PUT: https://api-shahin.azurewebsites.net/api/Movies/1
+
+POST: https://api-shahin.azurewebsites.net/api/Movies [Body USer user]
+
+DELETE: https://api-shahin.azurewebsites.net/api/Movies/1

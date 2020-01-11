@@ -47,11 +47,18 @@ namespace ApiShahin.Controllers
             return Ok(movie);
         }
 
-        // GET: api/Actors/rating/3.4
+        // GET: api/Movies/rating/3.4
         [HttpGet("rating/{rating:float}")]
         public IEnumerable<Movie> GetByLastName(float rating)
         {
-            return _context.Movies.Where(a => a.Rating >= rating);
+            return _context.Movies.Where(a => a.Rating >= rating).Include(a => a.Actor);
+        }
+
+        // GET: api/Movies/year?year=2019
+        [HttpGet("year")]
+        public IEnumerable<Movie> GetByYear(string year)
+        {
+            return _context.Movies.Where(a => a.Year == year).Include(a => a.Actor);
         }
 
         // PUT: api/Movies/5
