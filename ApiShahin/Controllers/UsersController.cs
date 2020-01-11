@@ -49,14 +49,14 @@ namespace ApiShahin.Controllers
             return Ok(user);
         }
 
-        // GET: api/Users/ByName/Arnold
+        // GET: api/Users/name/Arnold
         [HttpGet("name/{name}")]
         public IEnumerable<User> GetByName(string name)
         {
             return _context.Users.Where(a => a.Name == name);
         }
 
-        // GET: api/Users/ByName/Arnold
+        // GET: api/Users/lastname/Schwarzenegger
         [HttpGet("lastname/{name}")]
         public IEnumerable<User> GetByLastName(string name)
         {
