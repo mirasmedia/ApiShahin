@@ -58,11 +58,12 @@ namespace ApiShahin.Data
 
         public static List<Movie> GenerateMovies(ApiContext db)
         {
+            var actores = db.Actors.ToArray();
             List<Movie> movies = new List<Movie>() {
-                new Movie {Name="Jojo Rabbit", Year="2019", Rating=4.2f, Actor = new List<Actor>(db.Actors.Take(2))},
+                new Movie {Name="Jojo Rabbit", Year="2019", Rating=4.2f, Actor = new List<Actor>(db.Actors.Take(1))},
                 new Movie {Name="Predator", Year="1987", Rating=4.1f, Actor = new List<Actor>(db.Actors.Take(1))},
-                new Movie {Name="The 6th Day", Year="2000", Rating=3.6f, Actor = new List<Actor>(db.Actors.Take(4))},
-                new Movie {Name="Rocky", Year="1976", Rating=4.6f, Actor = new List<Actor>(db.Actors.Take(3))},
+                new Movie {Name="The 6th Day", Year="2000", Rating=3.6f, Actor = new List<Actor>(db.Actors.Take(1))},
+                new Movie {Name="Rocky", Year="1976", Rating=4.6f, Actor = new List<Actor>(db.Actors.Take(1))},
             };
             return movies;
         }

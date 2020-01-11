@@ -15,7 +15,7 @@ GET: https://api-shahin.azurewebsites.net/api/Users/lastname/Schwarzenegger
 
 PUT: https://api-shahin.azurewebsites.net/api/Users/1
 
-POST: https://api-shahin.azurewebsites.net/api/users [Body USer user]
+POST: https://api-shahin.azurewebsites.net/api/users [Body Actor actor]
 
 DELETE: https://api-shahin.azurewebsites.net/api/Users/1
 
@@ -31,6 +31,6 @@ GET: https://api-shahin.azurewebsites.net/api/Movies/year?year=2019
 
 PUT: https://api-shahin.azurewebsites.net/api/Movies/1
 
-POST: https://api-shahin.azurewebsites.net/api/Movies [Body USer user]
+POST: https://api-shahin.azurewebsites.net/api/Movies [Body Movie movie]
 
 DELETE: https://api-shahin.azurewebsites.net/api/Movies/1
