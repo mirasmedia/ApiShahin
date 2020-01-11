@@ -1,0 +1,17 @@
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\ApiShahin.deps.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\ApiShahin.runtimeconfig.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\ApiShahin.runtimeconfig.dev.json
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\ApiShahin.dll
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\ApiShahin.pdb
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.csprojAssemblyReference.cache
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.RazorAssemblyInfo.cache
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.RazorAssemblyInfo.cs
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.AssemblyInfoInputs.cache
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.AssemblyInfo.cs
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.RazorTargetAssemblyInfo.cache
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.dll
+D:\Inholland\SSP\ApiShahin\ApiShahin\obj\Debug\netcoreapp2.1\ApiShahin.pdb
+D:\Inholland\SSP\ApiShahin\ApiShahin\bin\Debug\netcoreapp2.1\libman.json
